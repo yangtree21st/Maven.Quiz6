@@ -7,22 +7,22 @@ import rocks.zipcode.io.arrays.ArrayUtils;
 public class UnboxTest {
     @Test
     public void test1() {
-        Character[] input = {'a','b','c','d','e','f','g'};
-        char[] expected = {'a','b','c','d','e','f','g'};
+        Character[] input = {'a','b','c'};
+        char[] expected = {'a','b','c'};
         test(input, expected);
     }
 
     @Test
     public void test2() {
-        Character[] input = {'z','x','y','w','v','u','s'};
-        char[] expected = {'z','x','y','w','v','u','s'};
+        Character[] input = {'z','x','y'};
+        char[] expected = {'z','x','y'};
         test(input, expected);
     }
 
     @Test
     public void test3() {
-        Character[] input = {'_', '0', ',', '1'};
-        char[] expected= {'_', '0', ',', '1'};
+        Character[] input = {'_', '0', ','};
+        char[] expected= {'_', '0', ','};
         test(input, expected);
     }
 

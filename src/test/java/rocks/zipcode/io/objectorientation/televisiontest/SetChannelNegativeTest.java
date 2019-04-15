@@ -10,7 +10,7 @@ public class SetChannelNegativeTest {
     @Test(expected = IllegalStateException.class)
     public void test1() {
         Television television = new Television();
-        Integer channelNumber = 0;
+        Integer channelNumber = 3;
 
         // when
         television.setChannel(channelNumber);
@@ -19,7 +19,7 @@ public class SetChannelNegativeTest {
     @Test(expected = IllegalStateException.class)
     public void test2() {
         Television television = new Television();
-        Integer channelNumber = 1;
+        Integer channelNumber = 4;
 
         // when
         television.setChannel(channelNumber);
@@ -29,7 +29,7 @@ public class SetChannelNegativeTest {
     @Test(expected = IllegalStateException.class)
     public void test3() {
         Television television = new Television();
-        Integer channelNumber = 2;
+        Integer channelNumber = 5;
 
         // when
         television.setChannel(channelNumber);

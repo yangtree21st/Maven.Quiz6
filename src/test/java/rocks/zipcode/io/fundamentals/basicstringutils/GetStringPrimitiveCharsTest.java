@@ -8,28 +8,28 @@ public class GetStringPrimitiveCharsTest {
     @Test
     public void test1() {
         // given
-        String expected = "The quick brown fox";
+        String expected = "There's nothing better than testing";
         test(expected);
     }
 
     @Test
     public void test2() {
         // given
-        String expected = "jumps over the lazy dog";
+        String expected = "TDD is the way to go";
         test(expected);
     }
 
     @Test
     public void test3() {
         // given
-        String expected = "Single responsibility principle";
+        String expected = "How could you ever get tired of this shit?";
         test(expected);
     }
 
     @Test
     public void test4() {
         // given
-        String expected = "Abstraction is the process of removing (superfluous) details from client-view.";
+        String expected = "It's lit";
         test(expected);
     }
 

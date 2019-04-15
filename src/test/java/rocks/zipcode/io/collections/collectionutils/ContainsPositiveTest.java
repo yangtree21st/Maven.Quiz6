@@ -9,10 +9,10 @@ import java.util.Collection;
 
 public class ContainsPositiveTest {
     // given
-    private Collection<?> collection1 = Arrays.asList(0, 1, 2, 3);
-    private Collection<?> collection2 = Arrays.asList(5, 10, 15, 20);
-    private Collection<?> collection3 = Arrays.asList(10, 20, 30, 40);
-    private Collection<?> collection4 = Arrays.asList(15, 30, 45, 60);
+    private Collection<?> collection1 = Arrays.asList(10, 11, 12, 13);
+    private Collection<?> collection2 = Arrays.asList(15, 110, 115, 120);
+    private Collection<?> collection3 = Arrays.asList(110, 120, 130, 140);
+    private Collection<?> collection4 = Arrays.asList(115, 130, 145, 160);
     private Collection<? extends Collection<?>> nestedCollection = Arrays.asList(
             collection1,collection2, collection3, collection4);
 

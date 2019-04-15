@@ -7,27 +7,27 @@ import rocks.zipcode.io.fundamentals.BasicStringUtils;
 public class RemoveSpecifiedCharacters {
     @Test
     public void test1() {
-        test("ABCDEFG", "ABC", "DEFG");
+        test("A", "ABC", "");
     }
 
     @Test
     public void test2() {
-        test("Mississippi", "i", "Msssspp");
+        test("jewish", "sh", "jewi");
     }
 
     @Test
     public void test3() {
-        test("Mississippi", "is", "Mpp");
+        test("catholic", "c", "atholi");
     }
 
     @Test
     public void test4() {
-        test("Mississippi", "ip", "Mssss");
+        test("christian", "cn", "hristia");
     }
 
     @Test
     public void test5() {
-        test("Mississippi", "Misp", "");
+        test("buddhist", "bd", "uhist");
     }
 
     private void test(String input, String charactersToReplace, String expected) {

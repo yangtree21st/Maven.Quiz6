@@ -11,11 +11,15 @@ public class FlattenTest {
     @Test
     public void test1() {
         // given
-        Collection<?> collection1 = Arrays.asList(0, 1, 2, 3);
-        Collection<?> collection2 = Arrays.asList(5, 10, 15, 20);
-        Collection<?> collection3 = Arrays.asList(10, 20, 30, 40);
-        Collection<?> collection4 = Arrays.asList(15, 30, 45, 60);
-        Collection<?> expected = Arrays.asList(0, 1, 2, 3, 5, 10, 15, 20, 10, 20, 30, 40, 15, 30, 45, 60);
+        Collection<?> collection1 = Arrays.asList(10, 11, 12, 13);
+        Collection<?> collection2 = Arrays.asList(15, 110, 115, 120);
+        Collection<?> collection3 = Arrays.asList(110, 120, 130, 140);
+        Collection<?> collection4 = Arrays.asList(115, 130, 145, 160);
+        Collection<?> expected = Arrays.asList(
+                10, 11, 12, 13,
+                15, 110, 115, 120,
+                110, 120, 130, 140,
+                115, 130, 145, 160);
 
         // when
         Collection<?> actual = CollectionUtils.flatten(collection1, collection2, collection3, collection4);
@@ -28,11 +32,15 @@ public class FlattenTest {
     @Test
     public void test2() {
         // given
-        Collection<?> collection1 = Arrays.asList("0", "1", "2", "3");
-        Collection<?> collection2 = Arrays.asList("5", "10", "15", "20");
-        Collection<?> collection3 = Arrays.asList("10", "20", "30", "40");
-        Collection<?> collection4 = Arrays.asList("15", "30", "45", "60");
-        Collection<?> expected = Arrays.asList("0", "1", "2", "3", "5", "10", "15", "20", "10", "20", "30", "40", "15", "30", "45", "60");
+        Collection<?> collection1 = Arrays.asList("10", "11", "12", "13");
+        Collection<?> collection2 = Arrays.asList("15", "110", "115", "120");
+        Collection<?> collection3 = Arrays.asList("110", "120", "130", "140");
+        Collection<?> collection4 = Arrays.asList("115", "130", "145", "160");
+        Collection<?> expected = Arrays.asList(
+                "10", "11", "12", "13",
+                "15", "110", "115", "120",
+                "110", "120", "130", "140",
+                "115", "130", "145", "160");
 
         // when
         Collection<?> actual = CollectionUtils.flatten(collection1, collection2, collection3, collection4);

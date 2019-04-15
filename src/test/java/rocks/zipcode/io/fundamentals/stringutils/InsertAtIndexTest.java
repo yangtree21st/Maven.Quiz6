@@ -11,16 +11,16 @@ public class InsertAtIndexTest {
     @Test
     public void test1() {
         String input = "reptilian";
-        String expected = "r_eptilian";
-        String insertValue = "_";
+        String expected = "r0eptilian";
+        String insertValue = "0";
         Integer indexToReplaceAt = 1;
         test(expected, input, insertValue, indexToReplaceAt);
     }
     @Test
     public void test7() {
         String input = "reptilian";
-        String expected = "r__eptilian";
-        String insertValue = "__";
+        String expected = "rxxeptilian";
+        String insertValue = "xx";
         Integer indexToReplaceAt = 1;
         test(expected, input, insertValue, indexToReplaceAt);
     }
@@ -28,8 +28,8 @@ public class InsertAtIndexTest {
     @Test
     public void test8() {
         String input = "airl";
-        String expected = "aiXXrl";
-        String insertValue = "XX";
+        String expected = "aiZZrl";
+        String insertValue = "ZZ";
         Integer indexToReplaceAt = 2;
         test(expected, input, insertValue, indexToReplaceAt);
     }

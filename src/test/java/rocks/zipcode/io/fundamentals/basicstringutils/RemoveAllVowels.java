@@ -7,27 +7,27 @@ import rocks.zipcode.io.fundamentals.BasicStringUtils;
 public class RemoveAllVowels {
     @Test
     public void test1() {
-        test("ABCDEFG", "BCDFG");
+        test("WOWWWWW", "WWWWWW");
     }
 
     @Test
     public void test2() {
-        test("Firefly", "Frfly");
+        test("we're", "w'r");
     }
 
     @Test
     public void test3() {
-        test("Coachella", "Cchll");
+        test("Oh shit", "h sht");
     }
 
     @Test
     public void test4() {
-        test("Burning man", "Brnng mn");
+        test("AEIOU", "");
     }
 
     @Test
     public void test5() {
-        test("Mississippi", "Msssspp");
+        test("aeiou", "");
     }
 
     private void test(String input, String expected) {

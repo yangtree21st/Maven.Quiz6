@@ -10,25 +10,25 @@ import java.util.List;
 public class ToArrayTest {
     @Test
     public void test1() {
-        String[] array = {"The", "Quick", "Brown", "Fox"};
+        String[] array = {"That", "Damn", "Fast", "Bunny"};
         test(Arrays.asList(array), array);
     }
 
     @Test
     public void test2() {
-        Integer[] array = {0, 5, 15, 20, 25};
+        Integer[] array = {10, 15, 115, 120, 125};
         test(Arrays.asList(array), array);
     }
 
     @Test
     public void test3() {
-        Character[] array = {'T', 'Q', 'B', 'F'};
+        Character[] array = {'T', 'G', 'I', 'F'};
         test(Arrays.asList(array), array);
     }
 
     @Test
     public void test4() {
-        Boolean[] array = {true, true, false, false, true, false, true, false};
+        Boolean[] array = {false, true, false, true, true, false, true, false};
         test(Arrays.asList(array), array);
     }
 

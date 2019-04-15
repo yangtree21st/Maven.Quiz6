@@ -7,22 +7,22 @@ import rocks.zipcode.io.arrays.ArrayUtils;
 public class BoxTest {
     @Test
     public void test1() {
-        char[] input = {'a','b','c','d','e','f','g'};
-        Character[] expected = {'a','b','c','d','e','f','g'};
+        char[] input = {'a'};
+        Character[] expected = {'a'};
         test(input, expected);
     }
 
     @Test
     public void test2() {
-        char[] input= {'z','x','y','w','v','u','s'};
-        Character[] expected = {'z','x','y','w','v','u','s'};
+        char[] input= {'z','x'};
+        Character[] expected = {'z','x'};
         test(input, expected);
     }
 
     @Test
     public void test3() {
-        char[] input= {'_', '0', ',', '1'};
-        Character[] expected = {'_', '0', ',', '1'};
+        char[] input= {'_', '0'};
+        Character[] expected = {'_', '0'};
         test(input, expected);
     }
 

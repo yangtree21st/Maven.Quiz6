@@ -8,23 +8,26 @@ import rocks.zipcode.io.objectorientation.Television;
 public class SetChannelPositiveTest {
     @Test
     public void test1() {
-        String expectedName = "MSN";
-        Integer channelNumber = 0;
+        String expectedName = "NBC";
+        Integer channelNumber = 7;
         test(expectedName, channelNumber);
     }
 
     @Test
     public void test2() {
-        String expectedName = "CNN";
-        Integer channelNumber = 1;
+        String expectedName = "CBS";
+        Integer channelNumber = 8;
         test(expectedName, channelNumber);
     }
 
+
     @Test
     public void test3() {
-        String expectedName = "FOX";
-        Integer channelNumber = 2;
-        test(expectedName, channelNumber);
+        String[] expectedNames = {"MSN", "CNN", "FOX", "AE", "MTV", "BET", "HBO", "NBC", "CBS"};
+        for (int channelNumber = 0; channelNumber < expectedNames.length; channelNumber++) {
+            String expectedName = expectedNames[channelNumber];
+            test(expectedName, channelNumber);
+        }
     }
 
     private void test(String expectedName, Integer channelNumber) {

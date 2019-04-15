@@ -11,9 +11,9 @@ public class GetAllCasingsTest {
     @Test
     public void test1() {
         // given
-        String stringInput = "ab";
+        String stringInput = "xy";
         Collection<String> expected = Arrays.asList(
-                "Ab", "ab", "AB", "aB");
+                "Xy", "xy", "XY", "xY");
 
 
 
@@ -23,34 +23,34 @@ public class GetAllCasingsTest {
     @Test
     public void test2() {
         // given
-        String stringInput = "abc";
+        String stringInput = "xyz";
         Collection<String> expected = Arrays.asList(
-                "ABc", "ABC", "Abc", "abc",
-                "aBc", "AbC", "abC", "aBC");
+                "XYz", "XYZ", "Xyz", "xyz",
+                "xYz", "XyZ", "xyZ", "xYZ");
         test(stringInput, expected);
     }
 
     @Test
     public void test3() {
         // given
-        String stringInput = "abcd";
+        String stringInput = "xyzt";
         Collection<String> expected = Arrays.asList(
-                        "abcd", "aBcd", "abCd", "aBCd",
-                        "abcD", "aBcD", "abCD", "aBCD",
-                        "ABcd", "ABCd", "ABcD", "ABCD",
-                        "Abcd", "AbCd", "AbcD", "AbCD");
+                        "xyzt", "xYzt", "xyZt", "xYZt",
+                        "xyzT", "xYzT", "xyZT", "xYZT",
+                        "XYzt", "XYZt", "XYzT", "XYZT",
+                        "Xyzt", "XyZt", "XyzT", "XyZT");
         test(stringInput, expected);
     }
 
     @Test
     public void test4() {
         // given
-        String stringInput = "ab cd";
+        String stringInput = "xy zt";
         Collection<String> expected = Arrays.asList(
-                "ab cd", "aB cd", "ab Cd", "aB Cd",
-                "ab cD", "aB cD", "ab CD", "aB CD",
-                "AB cd", "AB Cd", "AB cD", "AB CD",
-                "Ab cd", "Ab Cd", "Ab cD", "Ab CD");
+                "xy zt", "xY zt", "xy Zt", "xY Zt",
+                "xy zT", "xY zT", "xy ZT", "xY ZT",
+                "XY zt", "XY Zt", "XY zT", "XY ZT",
+                "Xy zt", "Xy Zt", "Xy zT", "Xy ZT");
         test(stringInput, expected);
     }
 
