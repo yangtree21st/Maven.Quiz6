@@ -12,6 +12,12 @@ public class StringUtils {
      * @return collection containing all permutations of casing of this string
      */
     public static Collection<String> getAllCasings(String string) {
+        // get length of string
+        // get range of length
+        // get power-set of range
+
+        // for every set in power-set
+            // uppercase indices of string using set
         return null;
     }
 
@@ -23,7 +29,6 @@ public class StringUtils {
     public static String upperCaseIndices(String string, Integer... indices) {
         return null;
     }
-
 
     /**
      * @param stringToBeManipulated - string to be evaluated

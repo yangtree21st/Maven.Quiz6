@@ -7,7 +7,7 @@ public class CollectionUtils {
 
     /**
      * @param collection - object to be converted to list
-     * @param <E>        - </E>type of collection
+     * @param <E>        - type of collection
      * @return list with identical contents
      */
     public static <E> List<E> toList(Collection collection) {
@@ -17,7 +17,7 @@ public class CollectionUtils {
     /**
      * @param nestedCollection - collection to be evaluated
      * @param collection       - collections to be sought within `nestedCollection`
-     * @return true if `nestedCollection` contains a composite collection contents identical to `collection`
+     * @return true if `nestedCollection` contains a collection with contents identical to `collection`
      */
     public static Boolean contains(Collection<? extends Collection<?>> nestedCollection, Collection<?> collection) {
         return null;
