@@ -13,7 +13,9 @@ public class StringUtils {
      */
     public static Collection<String> getAllCasings(String string) {
         // get length of string
+           int length = string.length();
         // get range of length
+
         // get power-set of range
 
         // for every set in power-set
